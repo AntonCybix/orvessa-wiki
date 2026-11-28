@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map – Orvessa Wiki</title>
+<meta name="description" content="The world map of Orvessa, drawn from the game&#39;s own map data.">
+<meta name="wiki-root" content="../">
+<meta name="wiki-build" content="public">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/wiki.css">
+<script type="module" src="../assets/main.js"></script>
+<script type="module" src="../assets/map.js"></script></head>
+<body class="build-public type-meta map-page">
+<header class="site-header">
+<a class="site-logo" href="../index.html">Orvessa <span>Wiki</span></a>
+<form class="site-search" action="../special/search.html" method="get" role="search">
+<input type="search" name="q" placeholder="Search the wiki" autocomplete="off" aria-label="Search the wiki">
+<ul class="search-suggest" hidden></ul>
+</form>
+<nav class="site-nav" aria-label="Wiki"><a href="../index.html">Main page</a><a href="../map/index.html">Map</a><a href="../special/random.html">Random page</a><a href="../special/all-pages.html">All pages</a><a href="../special/category-index.html">Categories</a><a href="../special/wanted-pages.html">Wanted pages</a><a href="../special/open-decisions.html">Open decisions</a></nav>
+</header>
+
+<main class="page">
+<article class="page-content type-meta" data-id="meta.map">
+<h1 class="page-title">Map</h1>
+<p class="page-summary"><em>The world map of Orvessa, drawn from the game&#39;s own map data.</em></p>
+
+
+<div class="page-body">
+<p>The world map is drawn from the same data as the game&#39;s map: zones, subzones, settlements, landmarks, dungeons, ship and boat routes, and the 512 m block grid. Hover to see the position in metres and its block (<code>block x_y</code>); click a zone, subzone, settlement or dungeon to open its page.</p>
+<div class="wiki-map-wrap"><div class="wiki-map-tools"><span class="wiki-map-layers"><label><input type="checkbox" data-layer="zones" checked> Zones</label><label><input type="checkbox" data-layer="subzones" checked> Subzones</label><label><input type="checkbox" data-layer="settlements" checked> Settlements</label><label><input type="checkbox" data-layer="landmarks" checked> Landmarks</label><label><input type="checkbox" data-layer="dungeons" checked> Dungeons</label><label><input type="checkbox" data-layer="routes" checked> Ship and boat routes</label><label><input type="checkbox" data-layer="coach"> Coach lines</label><label><input type="checkbox" data-layer="grid"> Block grid</label></span><label class="wiki-map-bg">Background <select data-bg></select></label><button type="button" data-reset>Whole world (0)</button></div><div id="wiki-map" class="wiki-map" data-src="../map/map.json" data-links="../map/links.json" data-root="../" data-bgdir="../map/"><canvas aria-label="Interactive world map"></canvas><div class="wiki-map-tip" hidden></div><noscript><p>The interactive map needs JavaScript.</p></noscript></div><p class="wiki-map-status" aria-live="polite">Drag to pan, wheel or pinch to zoom, 0 for the whole world. Click a zone, subzone, settlement or dungeon to open its page.</p></div>
+
+</div>
+
+
+
+
+
+</article>
+</main>
+<footer class="site-footer"><p>Orvessa Wiki · public build · map export 8169661f · built from the Storybibel and the game's map data.</p><p class="art-licence">Images are renders of Orvessa&#39;s game data. © the Orvessa project, all rights reserved (same terms as the game).</p></footer>
+</body>
+</html>
